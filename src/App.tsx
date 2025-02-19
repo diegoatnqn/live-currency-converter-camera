@@ -112,7 +112,7 @@ function App(): ReactElement {
       const imageBase64 = canvas.toDataURL('image/jpeg').split(',')[1];
 
       console.log('🚀 Sending image to server...');
-      const response = await axios.post('http://localhost:3001/api/detect-text', {
+      const response = await axios.post('https://bae5-1-37-88-241.ngrok-free.app/api/detect-text', {
         image: imageBase64
       });
 
